@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+header {
+    background-color:rgb(160,32,240);
+    text-align: center;
+    font-family: roboto;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.project{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:violet;
+    font-size: 12px;
+}
+
+
+
+p{
+    margin-bottom: 20px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-col{
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.project-col img{
+    width: 100%;
+    display: block;
+}
+
+
+.col{
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-size: 12px;
+}
+
+.project-col:hover {
+    box-shadow: 0 0  20px 0px rgba(0,0,0,1);
+    padding: 2px;
+}
+
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
