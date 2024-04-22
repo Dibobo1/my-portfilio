@@ -26,11 +26,16 @@ header {
     padding-top: 50px;
 }
 
+h3{
+    padding-top: 20px;
+}
+
 .flex-container{
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     background-color:violet;
-    font-size: 12px;
+    font-size: 5px;
 }
 
 
@@ -80,5 +85,11 @@ p{
 @media(max-width: 700px){
     .row{
         flex-direction: column;
+    }
+}
+
+@media (min-width: 504px) {
+    .flex-container {
+        flex-direction: row;
     }
 }
